@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    {% if No %}
+        <div align="center">（学生）学号{{ No }}登陆成功</div>
+    {% endif %}
+    <form action="http://127.0.0.1:8000/bear/logout/" method="post" style="margin:0 auto; width: 0">
+        {% csrf_token %}
+        <br>
+        <input type="submit" value="退出登陆" style="border: none;color: #0E69C7">
+    </form>
+</body>
+</html>
